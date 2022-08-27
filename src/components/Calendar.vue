@@ -56,8 +56,7 @@ const startDay = () => {
   return new Date(currentYear.value, currentMonth.value).getDay();
 }
 const prevCurrentMonth= () => {
-
-  currentMonth.value--;
+  currentMonth.value++;
 }
 
 const nextCurrentMonth= () => {
@@ -65,6 +64,7 @@ const nextCurrentMonth= () => {
 };
 
 const monthName = computed(() => {
+  console.log('test');
   return new Date(
       currentYear.value,
       currentMonth.value
